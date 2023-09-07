@@ -9,7 +9,7 @@ def run_test_cases(cases, f):
     cprint(f"{f.__name__}", "cyan")
     for inputs, expected_outputs in cases:
         print(f"Inputs: {colored(repr(inputs), 'magenta')}")
-        print(f"Expecting: {expected_outputs}")
+        print(f"Exp: {expected_outputs}")
         if isinstance(inputs, dict):
             outputs = f(**inputs)
         else:

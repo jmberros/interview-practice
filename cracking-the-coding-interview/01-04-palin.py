@@ -2,6 +2,12 @@
 # permutation of a palindrome. A palindrome is a word or phrase that is the
 # same forwards and backwards. A permutation is a rearrangement of letters. The
 # palindrome does not need to be limited to just dictionary words.
+
+# 💡
+# Truco: un palíndromo tiene una cantidad PAR de cada tipo de caracter, salvo
+# tal vez el del medio. Contar la frecuencia de cada letra y si hay más de una
+# que no sea par, no es palíndromo.
+
 from collections import Counter
 
 test_cases = [

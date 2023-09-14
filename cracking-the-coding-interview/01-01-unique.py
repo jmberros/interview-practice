@@ -7,6 +7,10 @@ test_cases = [
     ("", True),
 ]
 
+# 💡
+# aprovechar que está sorted:
+# atravesas letra por letra y si es igual a la anterior tiene dupes!
+
 
 # Notes: without other data structure, although sorted(s) iplicitly uses a list
 # Time: O(n log n)

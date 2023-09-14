@@ -3,6 +3,12 @@
 # if s2 is a rotation of s1 using only one call to isSubstring [e.g.,
 # "waterbottle" is a rotation of 'erbottlewat")
 
+# 💡
+# Truquito bellísimo: hacés s1 + s1 y ahí adentro están todas las "rotaciones".
+# Ojo que acá rotation significa una palabra de igual longitud pero que comienza
+# en el medio, pegando la vuelta.
+
+
 test_cases = [
     (dict(s1="waterbottle", s2="erbottlewat"), True),
     (dict(s1="foobarbaz", s2="foo"), False)

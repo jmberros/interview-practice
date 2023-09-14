@@ -2,6 +2,10 @@
 # assume that the string has sufficient space at the end to hold the additional
 # characters, and that you are given the "true" length of the string.
 
+# 💡
+# Medio pavote, vas juntando los nuevos caracteres en un array y ponés %20
+# si es un espacio. Preguntá si quieren que los espacios "colapsen" entre sí.
+
 test_cases = [
     ("ab c d", "ab%20c%20d"),
     (" ", "%20"),

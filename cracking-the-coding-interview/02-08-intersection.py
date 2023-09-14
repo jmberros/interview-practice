@@ -4,6 +4,15 @@
 # linked list is the exact same node (by reference) as the j t h node of the
 # second linked list, then they are intersecting.
 
+# 💡
+# Acá la solución sale sola si dibujás las listas intersecadas:
+# A partir del nodo intersección, la cola de ambas listas coincide.
+# Pero vos tenés ambas cabezas y no conocés el largo. Así que necesariamente
+# tenés que recorrer ambas una vez para obtener el largo1 y largo2.
+# Luego avanzás la diferencia en la lista más corta, y avanzás sincronizadamente
+# a partir de ahí, comparando el nodo cada vez. El primero que coincida es
+# la intersección.
+
 
 from linked_list_jm import LinkedList, LinkedListNode
 

@@ -9,6 +9,13 @@
 # [partition=5]
 # Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
 
+# 💡
+# Acá me trabé un toque con la burocracia de la LinkedList, OJO, poner atención
+# al detalle porque te enroscás.
+# La lógica es fácil de decir: vas nodo por nodo desde la cabeza y tirás los
+# nodos < x adelante de todo. Total no te piden orden, sólo partición.
+#
+
 from linked_list_jm import LinkedList, LinkedListNode
 
 

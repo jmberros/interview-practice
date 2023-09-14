@@ -8,6 +8,13 @@
 # push 1 => [7, 5, 10, 1] min [7, 5, 1]
 # pop 1 => [7, 5, 10] min 5 [7, 5]
 
+# 💡
+# Tenés que llevar un stack auxiliar SOLO CON LOS MINIMOS.
+# Cada vez que pusheas un elemento nuevo, chequeás si es menor que el último
+# mínimo agregado, y si sí, los agregás al min stack también.
+# Al popear, si es el último min, popeás del min stack también.
+# Lo pensás dos segundos y tiene toda lógica.
+
 
 class MinStack:
     def __init__(self):

@@ -1,6 +1,11 @@
 # Three in One: Describe how you could use a single array to implement three
 # stacks.
 
+# 💡
+# Acá el truco es que los stacks tengan capacidad máxima.
+# Así el offset se puede calcular fácil.
+# Hay que llevar track de los sizes de cada stack, eso sí.
+
 
 # NOTE: We need to assume a maximum capacity for the k stacks!
 

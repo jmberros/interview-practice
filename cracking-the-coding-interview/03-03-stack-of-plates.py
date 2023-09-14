@@ -10,6 +10,11 @@
 # FOLLOW UP: Implement a function popAt(int index) which performs a pop
 # operation on a specific sub-stack.
 
+# 💡
+# La clase lleva un array de stacks y otro de sizes, y agrega un nuevo stack
+# al array cuando el size DEL ULTIMO es max capacity.
+# Al popear se borran stacks vacío si los hubiera.
+
 
 class EmptyStackException(Exception):
     pass

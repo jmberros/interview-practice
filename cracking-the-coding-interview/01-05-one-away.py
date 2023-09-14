@@ -2,6 +2,14 @@
 # insert a character, remove a character, or replace a character. Given two
 # strings, write a function to check if they are one edit (or zero edits) away.
 
+# 💡
+# La clave acá es tratar por separado tres casos:
+# si los largos son iguales, chequear que todos los caracteres sean iguales
+# con a lo sumo una diferencia.
+# si los largos son !=, chequear zip(larga, corta) que coincidan y si no coinciden
+# avanzar la corta un pasito, asumiendo una deleción ahí. El salto se permite
+# una sola vez, si no falla el test.
+
 test_cases = [
     (dict(s1="pale", s2="ple"), True),
     (dict(s1="pales", s2="pale"), True),

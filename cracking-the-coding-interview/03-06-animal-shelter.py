@@ -9,6 +9,13 @@
 
 from linked_list_jm import LinkedList
 
+# 💡
+# usas dos Linked Lists: una de gatos y otra de perros, así tenes O(1) para quitar
+# la head de cada lista, que sería el animal más "viejo"
+# para dequeueAny, comparás las dos heads y ves cuál es más viejo
+# para esto es necesario entonces un counter *general* del animal shelter,
+# y a cada nuevo animal hay que ponerle el valor incrementado de ese counter
+
 
 # Time: O(1) enqueue and dequeue
 class AnimalShelter:

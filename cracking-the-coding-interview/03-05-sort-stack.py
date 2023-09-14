@@ -3,6 +3,13 @@
 # the elements into any other data structure (such as an array). The stack
 # supports the following operations: push, pop, peek, and isEmpty.
 
+# 💡
+# Acá el orden sí o sí tiene que ser mantenido en cada PUSH operation.
+# Al agregar un elemento, se compara con el top of the stack y se va popeando
+# y storeando en el stack temporario hasta que el nuevo elemento puede ser
+# introducido sin alterar el orden creciente.
+# luego se popea back al stack original todos los temporalmente apartados.
+
 # s = []
 # t = []
 

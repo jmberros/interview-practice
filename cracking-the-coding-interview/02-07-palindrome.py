@@ -1,5 +1,12 @@
 # Palindrome: Implement a function to check if a linked list is a palindrome.
 
+# 💡
+# Para saber esto necesitás el largo total de la lista, así que la recorrés una
+# vez para obtenerlo. Luego avanzás nodo a nodo hasta N // 2 stackeando los
+# nodos. Si N = impar, entonces avanzás uno más ignorando el nodo del medio,
+# porque no afecta la palindromidad. A partir de ahí, popeas del stack avanzando
+# un nodo a la vez, y deberían ir coincidiendo hasta el final.
+
 
 from linked_list_jm import LinkedList, LinkedListNode
 

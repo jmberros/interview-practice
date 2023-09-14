@@ -1,6 +1,11 @@
 # Return Kth to Last: Implement an algorithm to find the kth to last element of
 # a singly linked list.
 
+# 💡 Truco con two pointers. Avanzás K pasos con P1, P2 se queda quieto.
+# Luego avanzás de a un paso ambos, y efectivamente tienen siempre K de
+# distancia entre sí. Cuando P1 llega al final (no hay p2.next), entonces
+# P2 está a K del final y es la respuesta.
+
 
 from linked_list_jm import LinkedList, LinkedListNode
 

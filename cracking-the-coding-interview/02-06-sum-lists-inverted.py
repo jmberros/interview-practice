@@ -3,6 +3,14 @@
 # Vs digit is at the head of the list. Write a function that adds the two
 # numbers and returns the sum as a linked list.
 
+# 💡
+# Para este necesitás el largo de ambos números, así que hay que recorrer
+# ambas listas una vez.
+# Luego las "alineás" avanzando la más larga un número de pasos igual a la
+# diferencia de largo. Vas sumando el número * 10^i, donde i ahora empieza desde
+# n - 1 y va bajando (n = nodos en la más larga)
+# Acá no hace falta carry over.
+
 # EXAMPLE
 # Input: (6 -> 1 -> 7) + (2 -> 9 -> 5).Thatis,617 + 295
 # Output: 9 -> 1 -> 2, That is, 912.

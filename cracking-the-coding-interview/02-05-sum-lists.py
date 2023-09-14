@@ -3,6 +3,13 @@
 # Vs digit is at the head of the list. Write a function that adds the two
 # numbers and returns the sum as a linked list.
 
+# 💡
+# En este caso es fácil: sumás las unidades, luego las decenas, centenas, etc.
+# Si un número es más largo, el otro suma 0 en las posiciones que faltan.
+# Vas llevando un índice desde 0 y multiplicás por 10^0, 10^1, 10^2, ... para
+# sumar al total las unidades, decenas, centenas, ...
+# Nota al pie: si suma >= 10, la unidad queda en ese puesto y lo otro es carry over.
+
 from linked_list_jm import LinkedList, LinkedListNode
 
 

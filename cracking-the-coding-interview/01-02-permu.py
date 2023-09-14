@@ -1,6 +1,10 @@
 # Check Permutation: Given two strings, write a method to decide if one is a
 # permutation of the other.
 
+# 💡
+# Rápido: la frecuencia de caracteres tiene que se la misma.
+# Un poco menos rápido: ordenadas tienen que ser iguales.
+
 from collections import Counter
 
 test_cases = [

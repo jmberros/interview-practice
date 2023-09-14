@@ -1,6 +1,10 @@
 # Loop Detection: Given a circular linked list, implement an algorithm that
 # returns the node at the beginning of the loop.
 
+# 💡
+# Vas guardando en un set los visitados, ni bien revisitás uno, es ese.
+# No estoy seguro de si esto vale.
+# La otra es muy rompecoco, con dos punteros.
 
 from linked_list_jm import LinkedList, LinkedListNode
 

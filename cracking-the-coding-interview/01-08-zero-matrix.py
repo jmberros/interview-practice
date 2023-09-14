@@ -1,6 +1,11 @@
 # Zero Matrix: Write an algorithm such that if an element in an MxN matrix is 0,
 # its entire row and column are set to 0.
 
+# 💡
+# visitás todas las celdas y guardás rows y cols para borrar.
+# Luego visitás de nuevo esas rows y borrás cada celda, y lo mismo las cols.
+# Hacés 3 veces N x M, o sea O(N x M).
+
 test_cases = [
     (
         [[1, 1, 1], [1, 0, 1], [1, 1, 1]],

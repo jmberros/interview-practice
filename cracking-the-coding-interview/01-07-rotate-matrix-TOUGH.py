@@ -2,6 +2,14 @@
 # Rotate Matrix: Given an image represented by an NxN matrix, where each pixel
 # in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can
 # you do this in place?
+
+# 💡
+# Acá hay dos soluciones bastante diferentes. La de ir cambiando celda por
+# celda en capas concéntricas es un bardo y te podés trabar fulero.
+# Mejor es aprenderse el truco fácil: rotar = reversear las filas + transponer.
+# Así que reverseás las filas (fila 0 <-> fila N-1, etc)
+# Y luego transpones, que es swapear celdas [i][j] <-> [j][i] para todo i < j.
+
 import math
 
 test_cases = [

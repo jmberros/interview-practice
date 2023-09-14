@@ -1,3 +1,15 @@
+# Remove Dups: Write code to remove duplicates from an unsorted linked list.
+# FOLLOW UP How would you solve this problem if a temporary buffer is not
+# allowed?
+
+# 💡
+# El problema es mucho más complicado si hay que remover TODOS los nodos
+# de cada grupo de duplicados.
+# Si el primero puede quedar, es fácil: vas registrando en un Hashmap los
+# valores observados y si alguno ya fue observado antes, lo salteás
+# (para esto necesitás ir trackeando el previous_node).
+
+
 from linked_list_jm import LinkedListNode
 
 test_cases = [

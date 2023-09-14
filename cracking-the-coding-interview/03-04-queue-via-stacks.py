@@ -1,6 +1,11 @@
 # Queue via Stacks: Implement a MyQueue class which implements a queue using two
 # stacks.
 
+# 💡
+# Acá el truco es usar un stack como apoyo temporal cada vez que agregás un
+# elemento nuevo, de modo de agregarlo al COMIENZO de la lista (al fondo del stack).
+# Para esto tenés que popear todo, poner el nuevo, y despopear todo de regreso.
+
 # NOTE:
 # - Queue is FIFO
 # - it can `add` (to the front) and `poll` (from the tail)

@@ -1,6 +1,11 @@
 # Route Between Nodes: Given a directed graph, design an algorithm to find out
 # whether there is a route between two nodes.
 
+# 💡
+# partis al medio el array, elegis el nodo como root
+# luego recursivamente creas un BST a la izquierda con los nodos menores
+# y un BST a la derecha con los nodos mayores
+
 import collections
 
 

@@ -4,6 +4,13 @@
 # than the original string, your method should return the original string. You
 # can assume the string has only uppercase and lowercase letters (a - z).
 
+# 💡
+# Relativamente sencillo, sale de una. Vas trackeando el prev_character y
+# llevás un counter. Si avanzás y coincide con el anterior, counter++ y
+# seguís. Cuando no coinciden, agregás un elemento a la nueva lista, "CHAR<N>"
+# Preguntar si quieren que los 1s sean incluidos, es decir "A1" en lugar de "A".
+# Luego comparás largos y ya.
+
 
 test_cases = [
     ("aabcccccaaa", "a2b1c5a3"),

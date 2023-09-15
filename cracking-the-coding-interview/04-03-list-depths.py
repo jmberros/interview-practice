@@ -2,6 +2,15 @@
 # linked list of all the nodes at each depth (e.g., if you have a tree with
 # depth D, you'll have D linked lists).
 
+# 💡
+# Procesar por "nivel" de profundidad es obviamente con BFS y queue,
+# luego while loop y for loop adentro. Sale solo.
+# En cada nivel ir creando una nueva lista. Tener cuidado con no mezclarse
+# el BT node de input en cada iteración y el Linked List node de output,
+# e ir trackeando el último linked list node.
+# En la lista de output están solo las heads de las LL.
+
+
 from binarytree import tree, Node
 from collections import deque
 

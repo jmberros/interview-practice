@@ -2,7 +2,10 @@
 # search tree.
 
 # 💡
-
+# Recursión actualizando un rango de valores permitidos.
+# Cada vez que bajás a izquierda, actualizás el máximo con el nodo corriente.
+# Cada vez que bajás a derecha, actualizás el mínimo con el nodo corriente.
+# En cada call, comparás el valor del current node con ese rango.
 
 from binarytree import Node
 
